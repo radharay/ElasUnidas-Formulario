@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício Extra - Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <h1>Formulario - Inscrição</h1>
+
+            <div>
+                <label for="texto">Seu Nome</label>
+                <input type="texto" name="nome" placeholder="Insira seu Nome" id="usuario" autofocus required>
+            </div>
+
+            <div>
+                <label for="texto">E-mail</label>
+                <input type="texto" name="email" placeholder="Insira seu e-mail" required> <br>
+                <!-- <small id="emailHelp" class="form-email">Não se preocupe! Seu e-mail está seguro.</small> -->
+            </div>
+
+            <div>
+                <label for="texto">Você pode participar dos encontros?</label>
+                <div class="half-col">
+                    <input type="checkbox" name="encontros" value="Online"> Online <br>
+                    <input type="checkbox" name="encontros" value="Presencial"> Presencial <br>
+                    <input type="checkbox" name="encontros" value="Outro"> Online e Presencial<br>
+                </div>
+            </div>
+
+            <div>
+                <label for="texto">Pode Participar como?</label>
+                <div class="half-col">
+                    <input type="radio" name="participante" value="Estudante"> Estudante<br>
+                    <input type="radio" name="participante" value="Monitora"> Monitora <br>
+                </div>
+            </div>
+
+            <div>
+                <label for="texto"> Tem alguma dúvida?</label>
+                <select name="dropdown">
+                    <option value="contato">Sim, como faço para ser monitora?</option>
+                    <option value="contato">Sim, como eu posso participar?</option>
+                    <option value="contato">Não, obrigada.</option>
+                </select>
+            </div>
+            <div>
+
+                <div>
+                    <label for="texto">Você é de qual cidade/estado?</label>
+                    <select nome="extras">
+                        <optgroup label="São Paulo">
+                            <option value="cidadesp"> São Paulo</option>
+                            <option value="interiorsp">Interior de São Paulo</option>
+                            <option value="gradessp">Região metropolitana de São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Outros Estados">
+                            <option value="ceara">Ceará</option>
+                            <option value="outros">Outros</option>
+
+                        </optgroup>
+
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="texto">Comentários? São bem-vindos!</label>
+                    <textarea name="texto"></textarea>
+                    <!--informações textuais maiores, incluindo quebras de linhas-->
+                </div>
+
+                <div class="enviar">
+                   
+                    <button class="btn btn_grey">Limpar</button>
+                    <input class="btn btn_purple" type="submit" id="enviar" value="Enviar">
+                </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
